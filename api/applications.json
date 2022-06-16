@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Google",
+    "id": 0,
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+  },
+  {
+    "name": "Netflix",
+    "id": 1,
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg"
+  },
+  {
+    "name": "Prime video",
+    "id": 2,
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Amazon_Prime_Logo.svg"
+  }
+]
