@@ -1,6 +1,7 @@
 import App from "./App";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
+import { DarkModeProvider } from "../../contexts/DarkModeContext";
 
 export const queryClient = new QueryClient({
   defaultOptions: {
@@ -18,7 +19,9 @@ const AppContainer = () => {
   };
   return (
     <QueryClientProvider client={queryClient}>
-      <App />
+      <DarkModeProvider>
+        <App />
+      </DarkModeProvider>
       {renderReactQueryDevTools()}
     </QueryClientProvider>
   );

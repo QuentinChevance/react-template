@@ -18,13 +18,15 @@ const Applications = () => {
 
   return (
     <div>
-      <h2 className="text-3xl mb-2">Liste des applications</h2>
+      <h2 className="text-3xl mb-2 dark:text-slate-50">
+        Liste des applications
+      </h2>
       <AddApplication />
       <ul className="">
         {applications?.map((application) => (
           <li
             key={application.id}
-            className="p-2 rounded hover:text-slate-50 hover:bg-cyan-600 flex justify-between group"
+            className="p-2 rounded hover:text-slate-50 dark:text-slate-50 hover:bg-sky-400 flex justify-between group"
           >
             <div className="flex">
               <img src={application.logo} className="w-7 h-7 mr-2" />
