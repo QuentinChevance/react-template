@@ -24,7 +24,7 @@ const AddApplication = () => {
       addApplication({
         name: form.appName,
         logo: form.appLogo,
-        id: applications ? applications.length + 1 : 0,
+        id: applications ? Date.now() : 0, // the Id generation should be done on the server but in our case, we generate it on the front
       });
     }
   };

@@ -4,7 +4,7 @@ interface LoaderProps {
 
 const Loader = ({ value = "Chargement en cours..." }: LoaderProps) => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center dark:text-slate-50">
       <svg
         role="status"
         className="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"

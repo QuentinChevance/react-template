@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <Link
         to="applications"
-        className="text-3xl font-bold underline"
+        className="text-3xl font-bold underline dark:text-slate-50"
         onMouseEnter={prefetchApplications}
       >
         Pour consulter la liste des applications, cliquer.
