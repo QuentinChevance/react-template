@@ -23,6 +23,32 @@ $ npm install -D tailwindcss postcss autoprefixer
 $ npx tailwindcss init -p
 ```
 
+## Installation des tests avec [vitest](https://vitest.dev/)
+
+```
+$ npm install -D vitest
+$ npm i -D jsdom @testing-library/react
+```
+
+Dans le fichier `vite.config.ts`, ajouter :
+
+```ts
+/// <reference types="vitest" />
+/// <reference types="vite/client" />
+
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  test: {
+    globals: true,
+    environment: "jsdom",
+  },
+});
+```
+
 ## Ajout d'un package
 
 ```

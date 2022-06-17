@@ -19,8 +19,8 @@ const fetchApplications = async () => {
 
 /**
  * Simulate a POST method to add an application
- * @param application Application à ajouter
- * @returns Promise qui resolve avec le contenu de l'application ajoutée
+ * @param application Application to add
+ * @returns Promise that resolves with added application content
  */
 const postApplication = (application: Application) =>
   new Promise((resolve, reject) => {
