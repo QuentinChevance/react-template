@@ -1,6 +1,6 @@
 import { act, render, screen } from "@testing-library/react";
 import { ReactNode } from "react";
-import { beforeEach, describe, expect, test } from "vitest";
+import { describe, expect, test } from "vitest";
 import { DarkModeProvider } from "../../contexts/DarkModeContext";
 import DarkMode from "./DarkMode";
 
@@ -9,10 +9,8 @@ const wrapper = ({ children }: { children: ReactNode }) => (
 );
 
 describe("DarkMode test", () => {
-  beforeEach(() => {
-    render(<DarkMode />, { wrapper });
-  });
   test("Should show the sun on initial mount", () => {
+    render(<DarkMode />, { wrapper });
     const button = screen.getByRole("button");
     expect(button).toBeDefined();
     const svg = screen.getByTestId("sun");
@@ -20,6 +18,7 @@ describe("DarkMode test", () => {
   });
 
   test("Should switch to moon on click", () => {
+    render(<DarkMode />, { wrapper });
     const button = screen.getByRole("button");
     expect(button).toBeDefined();
     act(() => {

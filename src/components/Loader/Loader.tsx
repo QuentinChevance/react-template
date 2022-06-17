@@ -1,5 +1,5 @@
 interface LoaderProps {
-  value: string;
+  value?: string;
 }
 
 const Loader = ({ value = "Chargement en cours..." }: LoaderProps) => {
