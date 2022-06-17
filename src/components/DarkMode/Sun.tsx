@@ -7,6 +7,7 @@ const Sun = () => {
       strokeLinecap="round"
       strokeLinejoin="round"
       className="w-6 h-6"
+      data-testid="sun"
     >
       <path
         d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import useApplications from "../../../hooks/useApplications";
+import Input from "./Input";
 
 const DEFAULT_FORM = {
   appName: "",
@@ -51,21 +52,15 @@ const AddApplication = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input
+        <Input
           value={form.appName}
           onChange={handleChangeAppName}
-          placeholder="Nom de l'application"
-          type="text"
-          required
-          className="mb-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeHolder="Nom de l'application"
         />
-        <input
+        <Input
           value={form.appLogo}
           onChange={handleChangeAppLogo}
-          placeholder="Url du logo"
-          type="text"
-          required
-          className="mb-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeHolder="Url du logo"
         />
         <button
           type="submit"

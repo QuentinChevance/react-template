@@ -1,6 +1,6 @@
 const Moon = () => {
   return (
-    <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+    <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6" data-testid="moon">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
